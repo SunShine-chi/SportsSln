@@ -22,6 +22,7 @@ builder.Services.AddServerSideBlazor();
 
 
 var app = builder.Build();
+app.UseStaticFiles();
 app.UseSession();
 
 app.MapControllerRoute("catpage",
