@@ -23,7 +23,7 @@ builder.Services.AddServerSideBlazor();
 
 var app = builder.Build();
 app.UseStaticFiles();
-app.UseSession();
+app.UseSession();   
 
 app.MapControllerRoute("catpage",
 "{category}/Page{productPage:int}",
